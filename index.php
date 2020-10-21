@@ -36,8 +36,8 @@ if(isset($_POST["upload_file"])) {
         $final_data[$j] = $data;
       }
 
-      header('Content-disposition: attachment; filename='.$file_name.'.json');
-      header('Content-type: application/json');
+      //header('Content-disposition: attachment; filename='.$file_name.'.json');
+      //header('Content-type: application/json');
       echo json_encode($final_data);
 
       exit;
